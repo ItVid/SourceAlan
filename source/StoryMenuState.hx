@@ -21,7 +21,7 @@ using StringTools;
 
 class StoryMenuState extends MusicBeatState
 {
-	var scoreText:FlxText;
+	var scoreText:FlxText;//carpet bad
 
 	var weekData:Array<Dynamic> = [
 		['Tutorial'],
