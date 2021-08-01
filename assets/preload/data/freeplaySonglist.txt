@@ -1,4 +1,4 @@
 Tutorial:gf:1
-adobe:the-mad-one:1
-victim:the-chosen-one:1
+adobe:the-chosen-one:1
+victim:the-mad-one:1
 terminated:the-dark-lord:1
