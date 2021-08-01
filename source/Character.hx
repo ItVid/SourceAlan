@@ -139,6 +139,60 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
+
+
+			case 'the-chosen-one':
+				tex = Paths.getSparrowAtlas('alan/thechosenone','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'TCO Idle', 24);
+				animation.addByPrefix('singUP', 'TCO Up', 24);
+				animation.addByPrefix('singRIGHT', 'TCO Right', 24);
+				animation.addByPrefix('singDOWN', 'TCO Down', 24);
+				animation.addByPrefix('singLEFT', 'TCO Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
+
+			case 'the-mad-one':
+				tex = Paths.getSparrowAtlas('alan/thechosenonemad','shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'TCO Idle', 24);
+				animation.addByPrefix('singUP', 'TCO Up', 24);
+				animation.addByPrefix('singRIGHT', 'TCO Right', 24);
+				animation.addByPrefix('singDOWN', 'TCO Down', 24);
+				animation.addByPrefix('singLEFT', 'TCO Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
+
+			case 'the-dark-lord':
+					tex = Paths.getSparrowAtlas('alan/thedarklord','shared');
+					frames = tex;
+					animation.addByPrefix('idle', 'TDL Idle', 24);
+					animation.addByPrefix('singUP', 'TDL Up', 24);
+					animation.addByPrefix('singRIGHT', 'TDL Right', 24);
+					animation.addByPrefix('singDOWN', 'TDL Down', 24);
+					animation.addByPrefix('singLEFT', 'TDL Left', 24);
+	
+					addOffset('idle');
+					addOffset("singUP", -6, 50);
+					addOffset("singRIGHT", 0, 27);
+					addOffset("singLEFT", -10, 10);
+					addOffset("singDOWN", 0, -30);
+	
+					playAnim('idle');
+
+
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('spooky_kids_assets');
 				frames = tex;
