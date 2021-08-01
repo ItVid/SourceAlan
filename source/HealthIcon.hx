@@ -37,9 +37,9 @@ class HealthIcon extends FlxSprite
 		animation.add('parents-christmas', [17, 18], 0, false, isPlayer);
 		animation.add('monster', [19, 20], 0, false, isPlayer);
 		animation.add('monster-christmas', [19, 20], 0, false, isPlayer);
-		animation.add('the-chosen-one', [24, 25], 0, false, isPlayer);
-		animation.add('the-mad-one', [24, 25], 0, false, isPlayer);
-		animation.add('the-dark-lord', [26, 27], 0, false, isPlayer);
+		animation.add('the-chosen-one', [24, 24], 0, false, isPlayer);
+		animation.add('the-mad-one', [25, 25], 0, false, isPlayer);
+		animation.add('the-dark-lord', [26, 26], 0, false, isPlayer);
 		animation.play(char);
 		switch(char){
 			case 'bf-pixel' | 'senpai' | 'senpai-angry' | 'spirit' | 'gf-pixel':

@@ -167,6 +167,7 @@ class PlayState extends MusicBeatState
 	var upperBoppers:FlxSprite;
 	var bottomBoppers:FlxSprite;
 	var santa:FlxSprite;
+	var bgfolks:FlxSprite;
 
 	var fc:Bool = true;
 
@@ -699,6 +700,55 @@ class PlayState extends MusicBeatState
 						evilSnow.antialiasing = true;
 					add(evilSnow);
 					}
+			case 'adobe':
+			{
+					defaultCamZoom = 0.6;
+					curStage = 'bg';
+					var bg:FlxSprite = new FlxSprite(-650, -400).loadGraphic(Paths.image('bg/bg'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					bg.setGraphicSize(Std.int(bg.width * 1.1));
+					add(bg);
+
+					var stageFront:FlxSprite = new FlxSprite(-800, -275).loadGraphic(Paths.image('bg/floor'));
+					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+					stageFront.updateHitbox();
+					stageFront.antialiasing = true;
+					stageFront.scrollFactor.set(0.9, 0.9);
+					stageFront.active = false;
+					add(stageFront);
+
+					var bgfolks:FlxSprite = new FlxSprite(23, 130);
+					bgfolks.frames = Paths.getSparrowAtlas('alan/StickBumpinScared');
+					bgfolks.animation.addByPrefix('dance', 'ScaredCrowd', 24,  true);
+					bgfolks.setGraphicSize(Std.int(stageFront.width * 0.5));
+					bgfolks.antialiasing = true;
+					bgfolks.scrollFactor.set(0.9, 0.9);
+					bgfolks.updateHitbox();
+					add(bgfolks);
+					bgfolks.animation.play('dance', true);
+
+					var bgfolks:FlxSprite = new FlxSprite(1350, 150);
+					bgfolks.frames = Paths.getSparrowAtlas('alan/fire');
+					bgfolks.animation.addByPrefix('dance', 'Fires', 24, true);
+					bgfolks.setGraphicSize(Std.int(stageFront.width * 0.6 ));
+					bgfolks.antialiasing = true;
+					bgfolks.scrollFactor.set(0.9, 0.9);
+					bgfolks.updateHitbox();
+					add(bgfolks);
+					bgfolks.animation.play('dance', true);
+
+					var bgfolks:FlxSprite = new FlxSprite(-1625, 150);
+					bgfolks.frames = Paths.getSparrowAtlas('alan/fire');
+					bgfolks.animation.addByPrefix('dance', 'Fires', 24, true);
+					bgfolks.setGraphicSize(Std.int(stageFront.width * 0.6 ));
+					bgfolks.antialiasing = true;
+					bgfolks.scrollFactor.set(0.9, 0.9);
+					bgfolks.updateHitbox();
+					add(bgfolks);
+					bgfolks.animation.play('dance', true);
+			}
 			case 'senpai' | 'roses':
 			{
 					curStage = 'school';
@@ -3814,7 +3864,8 @@ class PlayState extends MusicBeatState
 		{
 			case 'school':
 				bgGirls.dance();
-
+			case 'bg':
+				bgfolks.animation.play('dance', true);
 			case 'mall':
 				upperBoppers.animation.play('bop', true);
 				bottomBoppers.animation.play('bop', true);
