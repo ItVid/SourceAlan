@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Windows.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Newgrounds0000" x="25" y="25" width="531" height="366" frameX="0" frameY="0" frameWidth="533" frameHeight="366"/>
+	<SubTexture name="Newgrounds0001" x="581" y="25" width="533" height="351" frameX="0" frameY="-15" frameWidth="533" frameHeight="366"/>
+	<SubTexture name="Newgrounds0002" x="1139" y="25" width="533" height="354" frameX="0" frameY="-12" frameWidth="533" frameHeight="366"/>
+	<SubTexture name="Newgrounds0003" x="25" y="416" width="527" height="357" frameX="0" frameY="-9" frameWidth="533" frameHeight="366"/>
+	<SubTexture name="Twitter0000" x="577" y="416" width="468" height="209" frameX="0" frameY="0" frameWidth="468" frameHeight="218"/>
+	<SubTexture name="Twitter0001" x="1070" y="416" width="468" height="209" frameX="0" frameY="0" frameWidth="468" frameHeight="218"/>
+	<SubTexture name="Twitter0002" x="25" y="798" width="468" height="214" frameX="0" frameY="0" frameWidth="468" frameHeight="218"/>
+	<SubTexture name="Twitter0003" x="518" y="798" width="468" height="218"/>
+	<SubTexture name="Window0000" x="1011" y="798" width="505" height="329" frameX="0" frameY="-25" frameWidth="505" frameHeight="354"/>
+	<SubTexture name="Window0001" x="25" y="1152" width="505" height="343" frameX="0" frameY="-11" frameWidth="505" frameHeight="354"/>
+	<SubTexture name="Window0002" x="555" y="1152" width="505" height="354"/>
+	<SubTexture name="Window0003" x="1085" y="1152" width="505" height="321" frameX="0" frameY="-33" frameWidth="505" frameHeight="354"/>
+</TextureAtlas>
