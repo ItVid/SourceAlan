@@ -15,6 +15,7 @@ bf-pixel
 senpai
 senpai-angry
 spirit
-the-chosen-one
-the-mad-one
-the-dark-lord
+thechosenone
+thechosenonemad
+bfscared
+thedarklord
