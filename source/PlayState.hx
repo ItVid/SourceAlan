@@ -704,14 +704,14 @@ class PlayState extends MusicBeatState
 			{
 					defaultCamZoom = 0.6;
 					curStage = 'bg';
-					var bg:FlxSprite = new FlxSprite(-650, -400).loadGraphic(Paths.image('bg/bg'));
+					var bg:FlxSprite = new FlxSprite(-650, -400).loadGraphic(Paths.image('BG/bg'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.9, 0.9);
 					bg.active = false;
 					bg.setGraphicSize(Std.int(bg.width * 1.1));
 					add(bg);
 
-					var stageFront:FlxSprite = new FlxSprite(-800, -275).loadGraphic(Paths.image('bg/floor'));
+					var stageFront:FlxSprite = new FlxSprite(-800, -275).loadGraphic(Paths.image('BG/floor'));
 					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 					stageFront.updateHitbox();
 					stageFront.antialiasing = true;
@@ -719,6 +719,7 @@ class PlayState extends MusicBeatState
 					stageFront.active = false;
 					add(stageFront);
 
+					
 					var bgfolks:FlxSprite = new FlxSprite(23, 130);
 					bgfolks.frames = Paths.getSparrowAtlas('alan/StickBumpinScared');
 					bgfolks.animation.addByPrefix('dance', 'ScaredCrowd', 24,  true);
@@ -729,6 +730,7 @@ class PlayState extends MusicBeatState
 					add(bgfolks);
 					bgfolks.animation.play('dance', true);
 
+					/*
 					var bgfolks:FlxSprite = new FlxSprite(1350, 150);
 					bgfolks.frames = Paths.getSparrowAtlas('alan/fire');
 					bgfolks.animation.addByPrefix('dance', 'Fires', 24, true);
@@ -739,6 +741,8 @@ class PlayState extends MusicBeatState
 					add(bgfolks);
 					bgfolks.animation.play('dance', true);
 
+					
+
 					var bgfolks:FlxSprite = new FlxSprite(-1625, 150);
 					bgfolks.frames = Paths.getSparrowAtlas('alan/fire');
 					bgfolks.animation.addByPrefix('dance', 'Fires', 24, true);
@@ -748,6 +752,7 @@ class PlayState extends MusicBeatState
 					bgfolks.updateHitbox();
 					add(bgfolks);
 					bgfolks.animation.play('dance', true);
+					*/
 			}
 			case 'senpai' | 'roses':
 			{
