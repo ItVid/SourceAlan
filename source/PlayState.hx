@@ -754,6 +754,37 @@ class PlayState extends MusicBeatState
 					bgfolks.animation.play('dance', true);
 					*/
 			}
+
+			case 'victim':
+			{
+					defaultCamZoom = 0.6;
+					curStage = 'bg1';
+					var bg:FlxSprite = new FlxSprite(-650, -400).loadGraphic(Paths.image('BG/bg'));
+					bg.antialiasing = true;
+					bg.scrollFactor.set(0.9, 0.9);
+					bg.active = false;
+					bg.setGraphicSize(Std.int(bg.width * 1.1));
+					add(bg);
+
+					var stageFront:FlxSprite = new FlxSprite(-800, -275).loadGraphic(Paths.image('BG/floor'));
+					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+					stageFront.updateHitbox();
+					stageFront.antialiasing = true;
+					stageFront.scrollFactor.set(0.9, 0.9);
+					stageFront.active = false;
+					add(stageFront);
+
+					var bgfolks:FlxSprite = new FlxSprite(10, 40);
+					bgfolks.frames = Paths.getSparrowAtlas('alan/StickBumpin');
+					bgfolks.animation.addByPrefix('dance', 'CheerCrowd', 24, true);
+					bgfolks.setGraphicSize(Std.int(stageFront.width * 0.5));
+					bgfolks.antialiasing = true;
+					bgfolks.scrollFactor.set(0.9, 0.9);
+					bgfolks.updateHitbox();
+					add(bgfolks);
+					bgfolks.animation.play('dance', true);
+			}
+
 			case 'senpai' | 'roses':
 			{
 					curStage = 'school';
